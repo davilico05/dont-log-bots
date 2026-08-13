@@ -247,8 +247,7 @@ yourls_add_filter( 'shunt_update_clicks', 'yp_dlb_skip_if_bot' );
 yourls_add_filter( 'shunt_log_redirect', 'yp_dlb_skip_if_bot' );
 
 // Skip if it's a bot
-function yp_dlb_skip_if_bot($shunt = false)
-{
+function yp_dlb_skip_if_bot($shunt = false) {
     if (yp_dlb_is_bot()) {
         return true;
     }
